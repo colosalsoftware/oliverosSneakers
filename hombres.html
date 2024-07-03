@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css"> <!-- Asegúrate de que styles.css esté en el mismo nivel que images -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Comprar</title>
+</head>
+<body style="overflow-x: hidden;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="height: 100px; background-color: #ffffff; border-bottom: 2px solid #ccc;">
+        <a class="navbar-brand" href="index.html"><img src="images/logooliveros_sneakers.png" alt="Logo oliverossneakers" id="logolargo" class="logo-icon" style="width:250px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#menuModal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+            <span class="navbar-toggler-icon" style="background-color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">PROPIEDADES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contacto">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal Menú -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Menú</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">PROPIEDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= SECTION PAGETOP ========================= -->
+    <section class="section-pagetop bg" style="background-color: #e0e0e0;">
+        <div class="container-fluid" style="background-color: #35363A; text-align: center; justify-content: center; padding: 20px;">
+            <form method="GET" action="buscar.html" class="form-inline d-flex justify-content-center align-items-center flex-wrap">
+                <input class="form-control mr-sm-2 mb-2 mb-sm-0" type="search" name="q" placeholder="Buscar propiedades..." aria-label="Buscar" style="width: 100%; max-width: 400px;">
+                <div class="form-group ml-3 mb-2 mb-sm-0">
+                    <label for="input" style="color: #FCE88D;">¿Cuál es tu Presupuesto Máximo?</label>
+                    <input id="input" type="range" value="0" min="0" max="0" class="form-control-range" style="width: 200px;">
+                    <div id="etiqueta" style="color: #FCE88D;"></div>
+                </div>
+            </form>
+        </div> <!-- container //  -->
+    </section>
+    <!-- ========================= SECTION INTRO END// ========================= -->
+    <div class="container-fluid" style="background-color: #e1e1e1; padding:20px;">
+        <div class="text-center">
+            <h1 class="title text-center titulo-responsive">TENIS EN VENTA</h1>
+        </div>        
+    </div>
+    <!-- ========================= SECTION CONTENT ========================= -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="1700000000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/property1.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/hombre/apt1.11.jpeg" style="height:250px; width:100%;" alt="Propiedad de Ejemplo 1" class="img-fluid">
+                        <h3>AIR FORCE 1</h3>
+                        <p>TALLAS: 7,8,9</p>
+                        <div class="detalles-propiedad" style="display: flex; justify-content: space-between;">
+                            <div class="detalle" style="text-align: center;">
+                                <img src="images/inicio/icono_habitaciones.jpg" alt="Icono Habitaciones" style="width: 35px; height: 35px;">
+                                <div>Habitaciones: <br>2</div>
+                            </div>
+                            <div class="detalle" style="text-align: center;">
+                                <img src="images/inicio/icono_ducha.jpg" alt="Icono Baños" style="width: 35px; height: 35px;">
+                                <div>Baños: <br>2</div>
+                            </div>
+                            <div class="detalle" style="text-align: center;">
+                                <img src="images/inicio/icono_mt.jpg" alt="Icono Metros Cuadrados" style="width: 35px; height: 35px;">
+                                <div>Metros cuadrados: <br>167</div>
+                            </div>
+                        </div>
+                        <h5 class="precio-formatear">1700000000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="ver-propiedad-link btn btn-warning text-white" data-toggle="modal" data-target="#propertyModal1" style="width: 100%;">VER PROPIEDAD</a>
+                            </div>
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573113014351?text=Hola%20Espacio%20Elite,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20propiedad%202.%20%C2%BFPodr%C3%ADan%20brindarme%20detalles%20adicionales%20y%20disponibilidad?" class="btn btn-success text-white" style="width: 100%;">Lo Quiero!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite el bloque anterior para cada propiedad -->
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="950000000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/property1.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/ventas/apt2.12.jpeg" style="height:250px; width:100%;" alt="Propiedad de Ejemplo 1" class="img-fluid">
+                        <h3>Apartamento turístico</h3>
+                        <h5>Ubicado en Marbella</h5>
+                        <p>Contiene un impresionante balcon con vista a el mar, ideal para inversion o venta, cuenta con sala, cocina, cuarto de labores, balcon con vista al mar y un parqueadero.</p>
+                        <div class="detalles-propiedad" style="display: flex; justify-content: space-between;">
+                            <div class="detalle" style="text-align: center;">
+                                <img src="images/inicio/icono_habitaciones.jpg" alt="Icono Habitaciones" style="width: 35px; height: 35px;">
+                                <div>Habitaciones: <br>3</div>
+                            </div>
+                            <div class="detalle" style="text-align: center;">
+                                <img src="images/inicio/icono_ducha.jpg" alt="Icono Baños" style="width: 35px; height: 35px;">
+                                <div>Baños: <br>3</div>
+                            </div>
+                            <div class="detalle" style="text-align: center;">
+                                <img src="images/inicio/icono_mt.jpg" alt="Icono Metros Cuadrados" style="width: 35px; height: 35px;">
+                                <div>Metros cuadrados: <br>130</div>
+                            </div>
+                        </div>
+                        <h5 class="precio-formatear">950000000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="ver-propiedad-link2 btn btn-warning text-white" data-toggle="modal" data-target="#propertyModal2" style="width: 100%;">VER PROPIEDAD</a>
+                            </div>
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573113014351?text=Hola%20Espacio%20Elite,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20propiedad%202.%20%C2%BFPodr%C3%ADan%20brindarme%20detalles%20adicionales%20y%20disponibilidad?" class="btn btn-success text-white" style="width: 100%;">Lo Quiero!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite el bloque anterior para cada propiedad -->
+        
+        </div>
+    </div>
+
+    
+    <!-- Modal Ver Propiedad 1-->
+    <div class="modal fade" id="propertyModal1" tabindex="-1" aria-labelledby="propertyModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel1">Fotos de la Propiedad</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Carrusel -->
+                    <div id="carouselExampleIndicators1" class="carousel slide carousel-fade custom-carousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="7"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="8"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="9"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="10"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="11"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="12"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="13"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="5000">
+                                <img src="images/ventas/apt1.1.jpeg" class="d-block w-100" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.2.jpeg" class="d-block w-100" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.3.jpeg" class="d-block w-100" alt="Imagen 3">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.4.jpeg" class="d-block w-100" alt="Imagen 4">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.5.jpeg" class="d-block w-100" alt="Imagen 5">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.6.jpeg" class="d-block w-100" alt="Imagen 6">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.7.jpeg" class="d-block w-100" alt="Imagen 7">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.8.jpeg" class="d-block w-100" alt="Imagen 8">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.9.jpeg" class="d-block w-100" alt="Imagen 9">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.10.jpeg" class="d-block w-100" alt="Imagen 10">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.11.jpeg" class="d-block w-100" alt="Imagen 11">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.12.jpeg" class="d-block w-100" alt="Imagen 12">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.13.jpeg" class="d-block w-100" alt="Imagen 13">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt1.14.jpeg" class="d-block w-100" alt="Imagen 14">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ver Propiedad 2-->
+    <div class="modal fade" id="propertyModal2" tabindex="-1" aria-labelledby="propertyModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel2">Fotos de la Propiedad</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Carrusel -->
+                    <div id="carouselExampleIndicators2" class="carousel slide carousel-fade custom-carousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="7"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="8"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="9"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="10"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="11"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="5000">
+                                <img src="images/ventas/apt2.1.jpeg" class="d-block w-100" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.2.jpeg" class="d-block w-100" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.3.jpeg" class="d-block w-100" alt="Imagen 3">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.4.jpeg" class="d-block w-100" alt="Imagen 4">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.5.jpeg" class="d-block w-100" alt="Imagen 5">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.6.jpeg" class="d-block w-100" alt="Imagen 6">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.7.jpeg" class="d-block w-100" alt="Imagen 7">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.8.png" class="d-block w-100" alt="Imagen 8">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.9.jpeg" class="d-block w-100" alt="Imagen 9">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.10.jpeg" class="d-block w-100" alt="Imagen 10">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.11.jpeg" class="d-block w-100" alt="Imagen 11">
+                            </div>
+                            <div class="carousel-item" data-interval="5000">
+                                <img src="images/ventas/apt2.12.jpeg" class="d-block w-100" alt="Imagen 12">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section id="Contacto" class="contacto-section">
+        <div class="container-fluid">
+            <div class="row">
+                <h3 style="width: 70%; margin-left: 15%; margin-top: 50px; display: flex; justify-content: center; color: #fae871; padding: 15px; font-size: 80px;">Contacto<BR></h3>
+                <div class="col-lg-6 col-md-12">
+                    <h3 style="text-align: center; width: 80%; margin-left: 10%; font-size: 26px; color: white;">Escanea y</h3>
+                    <h3 style="text-align: center; width: 80%; margin-left: 10%; font-size: 26px; color: #fae871;">chatea</h3>
+                    <br>
+                    <img src="images/contacto/qrcontacto.png" style="margin-left: 30%; width: 40%;">
+                    <h3 style="text-align: center; width: 80%; margin-left: 10%; font-size: 26px; color: white;"><br>Cartagena, Colombia.</h3>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h3 style="text-align: center; width: 80%; margin-left: 10%; font-size: 26px; color: #fae871;">Enviar Mensaje Directo</h3>
+                    <p style="font-size: 22px; padding: 80px; text-align: justify; color: white;">
+                        ¡Querido cliente de Oliveros Sneakers! ¿Tienes alguna pregunta o comentario? Escríbenos a nuestro WhatsApp para una atención rápida y personalizada. ¡Estamos aquí para ayudarte! Ya sea que necesites información sobre tallas, modelos o disponibilidad, nuestro equipo está listo para asistirte en todo momento.
+                    </p>
+                    <div style="display: flex; justify-content: center;">
+                        <a href="https://wa.link/2kqi4d" style="font-size: 24px; text-align: center; background-color: #25D366; text-decoration: none; color: white; width: 150px; height: 40px; border-radius: 10px;">WhatsApp</a>
+                    </div>
+                    <h6 style="margin-left: 25%; margin-top: 30px; width: 50%; text-align: center; justify-content: center; color: white;">Diseñado y Desarrollado por:<br> <a href="https://colosalsoftware.com/" style="text-decoration: none; color: #fae871;">COLOSAL SOFTWARE & DESARROLLO</a></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Abrir modal al hacer clic en el botón del menú
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            $('#menuModal').modal('show');
+        });
+
+        // Formatear precios
+        function formatPrice(price) {
+            return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+
+        const elementosParaFormatear = document.querySelectorAll('.precio-formatear');
+        elementosParaFormatear.forEach(function (elemento) {
+            const precioSinFormato = parseFloat(elemento.textContent);
+            elemento.textContent = '$ ' + formatPrice(precioSinFormato) + ' COP';
+        });
+
+        // Inicializar la barra de precio con el precio más alto
+        const inputRange = document.getElementById('input');
+        const propertyItems = document.querySelectorAll('.property-item');
+
+        let maxPrice = 0;
+        propertyItems.forEach(function (propertyItem) {
+            const propertyPrice = parseFloat(propertyItem.dataset.price);
+            if (propertyPrice > maxPrice) {
+                maxPrice = propertyPrice;
+            }
+        });
+        
+        inputRange.max = maxPrice;
+        inputRange.value = maxPrice;
+
+        // Actualizar etiqueta de precio
+        function formatearComoMoneda(valorNumerico) {
+            return valorNumerico.toLocaleString("es-CO", {
+                style: "currency",
+                currency: "COP",
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            });
+        }
+
+        function actualizarEtiqueta() {
+            var valorNumerico = parseFloat(inputRange.value);
+            if (!isNaN(valorNumerico)) {
+                etiqueta.innerHTML = formatearComoMoneda(valorNumerico);
+            } else {
+                etiqueta.innerHTML = "Valor no válido";
+            }
+        }
+
+        const etiqueta = document.querySelector('#etiqueta');
+        actualizarEtiqueta();
+        inputRange.addEventListener('input', actualizarEtiqueta, false);
+
+        // Filtrar propiedades por precio y palabra clave
+        function filterProperties() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedPrice = parseFloat(inputRange.value);
+            propertyItems.forEach(function (propertyItem) {
+                const propertyPrice = parseFloat(propertyItem.dataset.price);
+                const propertyName = propertyItem.querySelector('h3').textContent.toLowerCase();
+                const propertyLocation = propertyItem.querySelector('h5').textContent.toLowerCase();
+                const propertyDescription = propertyItem.querySelector('p').textContent.toLowerCase();
+                
+                if (propertyPrice <= selectedPrice && (propertyName.includes(searchTerm) || propertyLocation.includes(searchTerm) || propertyDescription.includes(searchTerm))) {
+                    propertyItem.style.display = 'block';
+                } else {
+                    propertyItem.style.display = 'none';
+                }
+            });
+        }
+
+
+        const searchInput = document.querySelector('.form-control[type="search"]');
+        searchInput.addEventListener('input', filterProperties);
+        inputRange.addEventListener('input', filterProperties);
+
+        // Abrir modal al hacer clic en "Ver Propiedad"
+        document.querySelectorAll('.ver-propiedad-link').forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                $('#propertyModal').modal('show');
+            });
+        });
+        // Abrir modal al hacer clic en "Ver Propiedad 2"
+        document.querySelectorAll('.ver-propiedad-link2').forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                $('#propertyModal2').modal('show');
+            });
+        });
+    </script>
+</body>
+</html>

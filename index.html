@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css"> <!-- Asegúrate de que styles.css esté en el mismo nivel que images -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Inicio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="height: 100px; background-color: #ffffff; border-bottom: 2px solid #ccc;">
+        <a class="navbar-brand" href="index.html"><img src="images/logooliveros_sneakers.png" alt="Logo oliverossneakers" id="logolargo" class="logo-icon" style="width:250px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#menuModal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+            <span class="navbar-toggler-icon" style="background-color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">PROPIEDADES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contacto">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Modal para el menú en dispositivos pequeños -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Menú</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">PROPIEDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-12 p-3 text-column">
+            <h1 class="title-inicio" style="font-family: 'Montserrat', sans-serif;padding:1px; font-weight: 1000; color: #848688; font-size: 2rem;">¿QUÉ ESTÁS BUSCANDO?</h1>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container-fluid nosotros-section" style="background-color: #000000;">
+        <div class="row no-gutters">
+            <div class="col-md-6 col-inicio">
+                <a href="hombres.html" class="property-link">
+                    <img src="images/inicio/oliveros_hombre.png" alt="hombre" style="width: 100%; height: auto;">
+                </a>
+            </div>
+            <div class="col-md-6 col-inicio">
+                <a href="mujeres.html" class="property-link">
+                    <img src="images/inicio/oliveros_mujer.png" alt="mujer" style="width: 100%; height: auto;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section id="Contacto" class="contacto-section">
+        <div class="container-fluid">
+            <div class="row">
+                <h3 style="width: 70%; margin-left: 15%; margin-top: 50px; display: flex; justify-content: center; color: #fae871; padding: 15px; font-size: 80px;">Contacto<BR></h3>
+                <div class="col-lg-6 col-md-12">
+                    <h3 style="text-align: center; width: 80%; margin-left: 10%; font-size: 26px; color: white;">Escanea y</h3>
+                    <h3 style="text-align: center; width: 80%; margin-left: 10%; font-size: 26px; color: #fae871;">chatea</h3>
+                    <br>
+                    <img src="images/contacto/qrcontacto.png" style="margin-left: 30%; width: 40%;">
+                    <h3 style="text-align: center; width: 80%; margin-left: 10%; font-size: 26px; color: white;"><br>Cartagena, Colombia.</h3>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h3 style="text-align: center; width: 80%; margin-left: 10%; font-size: 26px; color: #fae871;">Enviar Mensaje Directo</h3>
+                    <p style="font-size: 22px; padding: 80px; text-align: justify; color: white;">
+                        ¡Querido cliente de Oliveros Sneakers! ¿Tienes alguna pregunta o comentario? Escríbenos a nuestro WhatsApp para una atención rápida y personalizada. ¡Estamos aquí para ayudarte! Ya sea que necesites información sobre tallas, modelos o disponibilidad, nuestro equipo está listo para asistirte en todo momento.
+                    </p>
+                    <div style="display: flex; justify-content: center;">
+                        <a href="https://wa.link/2kqi4d" style="font-size: 24px; text-align: center; background-color: #25D366; text-decoration: none; color: white; width: 150px; height: 40px; border-radius: 10px;">WhatsApp</a>
+                    </div>
+                    <h6 style="margin-left: 25%; margin-top: 30px; width: 50%; text-align: center; justify-content: center; color: white;">Diseñado y Desarrollado por:<br> <a href="https://colosalsoftware.com/" style="text-decoration: none; color: #fae871;">COLOSAL SOFTWARE & DESARROLLO</a></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Abrir modal al hacer clic en el botón del menú
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            $('#menuModal').modal('show');
+        });
+    </script>
+</body>
+</html>

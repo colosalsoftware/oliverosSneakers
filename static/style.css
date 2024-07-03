@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em; /* Ajusta este valor para cambiar el tamaño de la fuente */
+    font-weight: bold; /* Esto hará que el texto sea más grueso */
+}
+
+.titulo-responsive{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; /* Light weight */ 
+  color: gray;
+  font-size: 2rem;
+}
+.body{
+  overflow-x: hidden;
+}
+@media (max-width: 600px) {
+  .titulo-responsive {
+      font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+  }
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.property-link {
+  display: block; /* Asegura que el enlace ocupe todo el espacio de la columna */
+  width: 100%; /* Asegura que el enlace ocupe todo el ancho disponible */
+  height: 100%; /* Asegura que el enlace ocupe todo el alto disponible */
+}
+
+.img-fluid {
+  width: 100%; /* Hace que la imagen sea responsive y se ajuste al ancho de su contenedor */
+  height: 100%; /* Ocupa todo el alto del enlace */
+  object-fit: contain; /* Mantiene la imagen entera visible, ajustando su tamaño proporcionalmente */
+  object-position: center; /* Centra la imagen dentro de su contenedor */
+}
+.contacto-section {
+  position: relative;
+  background-image: url('../images/contacto/fondo_contacto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contacto-section h3,
+.contacto-section p,
+.contacto-section a,
+.contacto-section h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.contacto-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Ajusta el valor de 0.5 según la transparencia deseada */
+  z-index: 1;
+}
+
+.contacto-section .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+.logo-icon {
+  width: 250px; /* Ajusta el tamaño del logo aquí */
+  height: auto;
+}
+.custom-carousel {
+  height: 70vh; /* Ocupa la mitad de la altura de la pantalla */
+  overflow: hidden;
+}
+.custom-carousel .carousel-inner {
+  height: 100%;
+}
+.custom-carousel .carousel-item {
+  height: 100%;
+}
+.custom-carousel img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+}
+.nosotros-section {
+  padding: 2rem 0;
+}
+.text-column {
+  text-align: center;
+}
+
+.col-inicio img {
+  max-width: 100%;
+  height: auto;
+}
+.logo-icon {
+    width: 250px; /* Ajusta el tamaño del logo aquí */
+    height: auto;
+}
+.nosotros-section {
+    padding: 2rem 0;
+}
+.text-column {
+    text-align: center;
+}
+.property-link {
+    position: relative;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.property-link img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.property-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+.property-overlay span {
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+.property-link:hover .property-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.logo-icon {
+  width: 250px; /* Ajusta el tamaño del logo aquí */
+  height: auto;
+}
+.nosotros-section {
+  padding: 2rem 0;
+}
+.text-column {
+  text-align: center;
+}
+.property-link {
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.property-link img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.property-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+.property-overlay span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+}
+.property-link:hover .property-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.border-box {
+  padding: 10px;
+  border: 2px solid #d4d4d4; /* Cambia el color del borde según tus preferencias */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.property-item {
+  box-shadow: none;
+  padding: 20px;
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+.custom-carousel {
+  height: 70vh; /* Ocupa el 70% de la altura de la pantalla */
+  overflow: hidden;
+}
+.custom-carousel .carousel-inner {
+  height: 100%;
+}
+.custom-carousel .carousel-item {
+  height: 100%;
+}
+.custom-carousel img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 8px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .15s ease-in-out;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input[type="range"]:hover {
+  opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
+}
